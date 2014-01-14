@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:orientation="vertical"
+    android:background="#DDDDDD"
+    android:layout_gravity="bottom" >
+
+    <LinearLayout 
+		android:orientation="horizontal" 
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent">
+    
+        <!-- button_share -->
+        <Button
+	     android:layout_height="wrap_content"
+	     android:layout_weight="1"
+	     android:layout_width="0dp"
+	     android:text="Partager" 
+	     android:scaleType="center"
+	     android:onClick="partagerEvent"
+	     android:background="#DDDDDD"
+	     android:paddingLeft="30dp"
+	     android:drawableLeft="@drawable/button_share"
+	     />
+    
+    	<!-- button_setfacebook -->
+	    <Button
+	     android:layout_height="wrap_content"
+	     android:layout_weight="1"
+	     android:layout_width="0dp"
+	     android:text="Afficher" 
+	     android:onClick="afficherEvent"
+	     android:scaleType="center"
+	     android:paddingLeft="30dp"
+	     android:background="#DDDDDD"
+	     android:drawableLeft="@drawable/facebook_icon"
+	     />
+	    
+	    <!-- button_goto -->
+	    <Button
+	     android:layout_height="wrap_content"
+	     android:layout_weight="1"
+	     android:layout_width="0dp"
+	     android:text="Itinéraire" 
+	     android:scaleType="center"
+	     android:paddingLeft="30dp"
+	     android:onClick="chargerItineraire"
+	     android:drawableLeft="@drawable/button_goto"
+	     android:background="#DDDDDD"
+	     android:shadowColor="#000000"
+	     />
+        
+    </LinearLayout>
+    
+    
+</RelativeLayout>
